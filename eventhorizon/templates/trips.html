@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="traveltripDiv container mt-5">
+      <h1 class="text-center mb-4 bigHeading row">Upcoming Trips</h1>
+      <div class="row mt-5">
+        {% for trip in trips %}
+          <div class="col-md-3 mb-5">
+            <div class="card">
+              {% comment %} <img src="https://via.placeholder.com/600x300" class="card-img-top" alt="City Image" /> {% endcomment %}
+              <div class="card-body">
+                <h5 class="card-title">City Name</h5>
+                <p class="card-text">
+                  <strong>Package:</strong> Basic Package
+                </p>
+                <p class="card-text">
+                  <strong>Duration:</strong> 3 Days 2 Nights
+                </p>
+                <p class="card-text">
+                  <strong>Upcoming Trip Date:</strong> 20th May 2024
+                </p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <footer class="footer-1 text-white py-3 col-12 mt-5" style="text-align: right; background-color: rgba(255, 153, 0, 0.637); ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4" style="color: black">
+            <h5>About Us</h5>
+            <p>Event Horizon : Travel Far, Travel Wide, Travel Well. Escape to New Horizons</p>
+          </div>
+          <hr /><br />
+          <div class="col-md-4" style="color: black">
+            <h5>Contact Us</h5>
+            <p>Email: contact@eventhorizon.com</p>
+            <p>Phone: +1234567890</p>
+          </div>
+          <hr /><br />
+          <div class="col-md-4" style="color: black">
+            <h5>Location</h5>
+            <p>123 Main Street</p>
+            <p>City, Country</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="footer text-center py-3 row" style="background-color: rgba(255, 153, 0, 0.637); color: black;">
+      <div class="container">
+        <span class="">Event Horizon Website &copy; 2024 - providing travel and vacation tours.</span>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
+    {% endblock %}

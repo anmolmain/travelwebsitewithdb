@@ -1,0 +1,132 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.background {
+    background: url(https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.textArea {
+    position: relative;
+    padding: 3%;
+    min-width: 90%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.432);
+}
+
+.bigHeading {
+    font-size: 7vw;
+    font-weight: 700;
+    color: rgb(56, 56, 56);
+    letter-spacing: 0.4vw;
+    text-align: center;
+}
+
+.bigHeading4vw {
+    font-size: 4vw;
+    font-weight: 700;
+    color: rgb(56, 56, 56);
+    text-align: center;
+}
+
+.secondBigHeading {
+    font-size: 2vw;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(56, 56, 56);
+    letter-spacing: 0.4vw;
+}
+
+.secondBigHeading0vw {
+    font-weight: 400;
+    color: rgb(56, 56, 56);
+    letter-spacing: 0.4vw;
+    padding-left: 12%;
+}
+
+.secondDiv {
+    background: url(https://images.pexels.com/photos/1149243/pexels-photo-1149243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.thirdDiv {
+    background: url(https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fourthDiv .col-12 .col-3 {
+    width: 100%;
+    margin: auto;
+    padding: 5%;
+}
+
+.fifthDiv .col-md-6 img {
+    width: 60%;
+}
+
+.fifthDiv .col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.colorDiv {
+    width: 60%;
+    height: 70%;
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 153, 0, 0.637);
+}
+
+.fifthDiv {
+    margin-top: 10vh;
+}
+::-webkit-scrollbar{
+    background-color: rgb(255, 255, 255);
+    width: 4vw;
+}
+
+::-webkit-scrollbar-thumb{
+    background: url(plane.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.card{
+    /* border: 5px solid black; */
+    box-shadow: 1px 10px 10px  gray;
+    border-radius: 10px;
+}
+ul li{
+    /* justify-content: space-between; */
+    margin: 5px;
+}
+ul li:hover{
+    scale: 1.1;
+    transition: 0.1s;
+}
+a:hover{
+    scale: 1.1;
+    transition: 0.1s;
+}

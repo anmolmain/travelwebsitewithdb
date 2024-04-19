@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 bigHeading">Tour Booking Form</h1>
+        <form id="tourForm" action="{% url 'save_booking' %}" method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="destination" class="input-group">Tour Destination</label>
+                <select class="custom-select" id="destination" name="destination" required>
+                    <option value="">Select Destination</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Varanasi">Varanasi</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Agra">Agra</option>
+                    <option value="Udaipur">Udaipur</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Amritsar">Amritsar</option>
+                    <option value="Rishikesh">Rishikesh</option>
+                    <option value="Leh">Leh</option>
+                    <option value="Shimla">Shimla</option>
+                    <option value="Pondicherry">Pondicherry</option>
+                    <option value="Rajkot">Rajkot</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Hampi">Hampi</option>
+                    <option value="Ooty">Ooty</option>
+                    <option value="Gangtok">Gangtok</option>
+                    <option value="Mysore">Mysore</option>
+                    <option value="Khajuraho">Khajuraho</option>
+                    <option value="Kanyakumari">Kanyakumari</option>
+                    <option value="Pushkar">Pushkar</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Haridwar">Haridwar</option>
+                    <option value="Nainital">Nainital</option>
+                    <option value="Aurangabad">Aurangabad</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Mahabaleshwar">Mahabaleshwar</option>
+                    <option value="Ranthambore">Ranthambore</option>
+                    <option value="Kochi">Kochi</option>
+                    <option value="Kovalam">Kovalam</option>
+                    <option value="Bodh">Bodh</option>
+                    <option value="Tirupati">Tirupati</option>
+                    <option value="Gulmarg">Gulmarg</option>
+                    <option value="Varkala">Varkala</option>
+                    <option value="Bikaner">Bikaner</option>
+                    <option value="Nashik">Nashik</option>
+                    <option value="Manali">Manali</option>
+                    <option value="Darjeeling">Darjeeling</option>
+                    <option value="Jaisalmer">Jaisalmer</option>
+                    <option value="Alleppey">Alleppey</option>
+                </select>
+
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Date</label>
+                <input type="date" name="date" class="form-control" id="date" required>
+            </div>
+            <div class="mb-3">
+                <label for="time" class="form-label">Time</label>
+                <input type="time" name="time" class="form-control" id="time" required>
+            </div>
+            <div class="mb-3">
+                <label for="boarding" class="form-label">Boarding Location</label>
+                <input type="text" name="boarding" class="form-control" id="boarding" required>
+            </div>
+            <div class="mb-3">
+                <label for="contact" class="form-label">Contact Details - Mobile</label>
+                <input type="number" name="contactm" class="form-control" id="contactm" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Contact Details - Email</label>
+                <input type="email" name="contacte" class="form-control" id="contacte" required>
+            </div>
+            <button type="submit" class="btn mb-5" style="background-color: rgba(255, 153, 0, 0.815);">Submit</button>
+</form>
+        
+    </div>
+
+    <script src="Checkout.js"></script>
+    <footer class="footer-1 text-white py-3 col-12 mt-5"
+        style="text-align: right; background-color: rgba(255, 153, 0, 0.637); ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" style="color: black">
+                    <h5>About Us</h5>
+                    <p>Event Horizon : Travel Far, Travel Wide, Travel Well. Escape to New Horizons</p>
+                </div>
+                <hr><br>
+                <div class="col-md-4" style="color: black">
+                    <h5>Contact Us</h5>
+                    <p>Email: contact@eventhorizon.com</p>
+                    <p>Phone: +1234567890</p>
+                </div>
+                <hr><br>
+                <div class="col-md-4" style="color: black">
+                    <h5>Location</h5>
+                    <p>123 Main Street</p>
+                    <p>City, Country</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <footer class="footer text-center py-3 row" style="background-color: rgba(255, 153, 0, 0.637); color: black;">
+        <div class="container">
+            <span class="">Event Horizon Website &copy; 2024 - providing travel and vacation tours.</span>
+        </div>
+    </footer>
+    {% endblock %}
